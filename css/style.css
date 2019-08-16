@@ -1,0 +1,202 @@
+@charset "utf-8";
+@font-face{
+    font-family: notoSerR;
+    src: url("../fonts/NotoSerif-Regular.eot");
+    src: local("※"),
+    url("../fonts/NotoSerif-Regular.woff2") format("woff2"),
+    url("../fonts/NotoSerif-Regular.woff") format("woff"),
+    url("../fonts/NotoSerif-Regular.ttf") format("truetype")}
+@font-face{
+    font-family: WorksansEB;
+    src: url("fonts/WorkSans-ExtraBold.eot");
+    src: local("※"),
+    url("fonts/WorkSans-ExtraBold.woff2") format("woff2"),
+    url("fonts/WorkSans-ExtraBold.woff") format("woff"),
+    url("fonts/WorkSans-ExtraBold.ttf") format("truetype")}
+@font-face{
+    font-family: NotoR;
+    src: url("fonts/NotoSansKR-Regular.eot");
+    src: local("※"),
+    url("fonts/NotoSansKR-Regular.woff2") format("woff2"),
+    url("fonts/NotoSansKR-Regular.woff") format("woff"),
+    url("fonts/NotoSansKR-Regular.otf") format("opentype")}
+/* 태그초기화 */
+body, ul, h1, h2, h3, p, header, nav, section, footer, button{margin: 0;padding: 0}
+header, section, footer{display: block}
+button{background: none;border: none;font-family: inherit}
+body{font-family: notoSerR;font-size: 18px;color: #333333}
+ul{list-style: none}
+a:link, a:visited, a:hover, a:active{text-decoration: none;color: inherit}
+header, nav, section, footer{display: block}
+img{vertical-align: top;border: none}
+h1, h2, h3{font-weight: nomal}
+.blind{font-size: 0;text-indent: -9999px;width: 1px;height: 1px;position: absolute;top: 0;left: -9999px;overflow: hidden;line-height: -9999px}
+/* skip */
+#skip a{position: absolute;top: 0;left: -9999px;z-index: 300}
+#skip a:active, #skip a:focus{left: 0;width: 100%;height: 70px;line-height: 70px;text-align: center;background: #fff;font-weight: bold}
+
+
+/* #header */
+
+
+#header{position: fixed;top: 0;left: 0;right: 0;height: 100px;background: rgb(0, 0, 0);z-index: 300;color: #fff}
+.logo{position: absolute;top: 40%;left:40px;z-index: 500;width: 265px}
+
+/* #gnb */
+#gnb{position: absolute;top: 0;left: 0;right: 0;background:rgba(27, 27, 27, 75%);color: #fff;text-align: center;border-bottom: 1px solid #aaa;}
+#gnb > ul{position: relative;left: 93px;width:1200px;height: 90px;margin: 0 auto;}
+#gnb > ul > li{float: left;width: 150px;}
+
+#gnb ul li a{display: block}
+#gnb > ul > li > a{position: relative;height: 100px;line-height: 100px;font-size: 18px;color: #fff}
+#gnb > ul > li:hover > a, #gnb > ul > li > a:focus, #gnb > ul > li.on > a{color: #ccd9d1}
+#gnb ul li div ul{height: 80px;}
+#gnb ul .gnb1 div ul{border-left: none;text-align: left}
+#gnb ul li div ul li a{height: 34px;line-height: 34px;font-size: 15px}
+#gnb ul li div ul li:hover a, #gnb ul li div ul li a:focus, #gnb ul li div ul li.on a{color: #ccd9d1}
+
+#gnb ul .gnb1 ul li{margin-left: 55px}
+#gnb ul .gnb2 ul li{margin-left: 15px}
+#gnb ul .gnb3 ul li{margin-left: -13px}
+#gnb ul .gnb5 ul li{margin-left: 34px}
+#gnb ul .gnb7 ul li{margin-left: 23px}
+
+
+
+/* index */
+#visual .item{position: relative;margin-top: 80px}
+#visual .carousel-inner{height: 651px;overflow: hidden;}
+
+#content{height: 3000px;}
+.area{margin: 0 360px;}
+#content .area{padding-top: 140px;position: relative;}
+#content .area:after{content: "";display: block;clear: both;}
+#content .area .box{position: absolute}
+#content .area .box img{position: absolute;z-index: 100;}
+#content .area .box .line{position: relative;width: 390px;height: 554px;border: 1px solid #313131}
+#content .area .box.right{text-align: right}
+#content .area .box .txt{position: absolute;width: 160px;height: auto;}
+#content .area .box .txt h3{color: #333;margin-bottom: 58px;font-size: 30px}
+#content .area .box .txt ul{font-size: 17px;line-height: 22px;color: #8d8d8d}
+
+#content .area .boxx.cnt1 img{left: 0}
+#content .area .box.cnt1 .txt{top: 43px;left: 500px}
+#content .area .box.cnt1 .line{top: 43px;left: 24px;}
+
+#content .area .box.cnt2 img{left: 850px;top: 460px}
+#content .area .box.cnt2 .txt{top: 510px;left: 545px}
+#content .area .box.cnt2 .line{top: 510px;left: 800px;}
+
+#content .area .box.cnt3 img{left: 0px;top: 920px}
+#content .area .box.cnt3 .txt{top: 970px;left: 500px}
+#content .area .box.cnt3 .line{top: 970px;left:24px}
+
+#content .area .box.cnt4 img{left: 850px;top: 1355px}
+#content .area .box.cnt4 .txt{top: 1400px;left: 545px}
+#content .area .box.cnt4 .line{top: 1400px;left: 800px;}
+
+#content .area .box.cnt5 img{left: 0px;top: 1920px}
+#content .area .box.cnt5 .txt{top: 1970px;left: 500px}
+#content .area .box.cnt5 .line{top: 1970px;left:24px}
+
+
+
+.area h2{font-size: 50px;background: #fff;text-align: center;font-weight: 100;display: inline-block;padding: 10px 0}
+.area h2:before{content: "";display: block;position: absolute;width: 286px;height: 286px;border: 1px solid #313131;z-index: -100;}
+
+
+#content1 .area h2{float: right;position: relative;margin-top: -115px}
+#content1 .area h2:before{top: -100px;right: 65px}
+#content1 .area .artist li img, #content1 .area .artist li button, #content1 .area .artist li strong, #content3 .area ul li img{-webkit-transition: all 0.3s;-moz-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s}
+#content1 .area .artist li:nth-child(even){margin-top: 53px}
+#content1 .area .artist{height: 700px;width: 1200px}
+#content1 .area .artist li{position: relative;float: left;background-color: #000}
+#content1 .area .artist li:hover img{opacity: 0.5;}
+#content1 .area.artist li:hover button, #content1 .area .artist li:hover strong{opacity: 1;filter: Alpha(100)}
+#content1 .area .artist li button:hover{background: #fff;color: #313131}
+#content1 .area .artist li strong{margin-top: -30px;text-align: center;margin-left: -56px;font-weight: normal}
+#content1 .area .artist li button, #content1 .area .artist li strong{position: absolute;top: 50%;left: 50%;color: #fff;opacity: 0;filter: Alpha(0);}
+#content1 .area .artist li button{display: inline-block;border: 1px solid #fff;padding: 15px 30px;margin-left: -55px}
+
+
+#content2 .area{width: 1200px;margin-bottom: 121px}
+#content2 .area h2{position: relative}
+#content2 .area h2:before{top: -100px;right: -130px}
+#content2 .area p{position: absolute;left: 360px;margin-top: 420px;font-size: 15px;line-height: 18px;letter-spacing: -0.23px;display: inline-block;width: 600px;box-sizing: border-box;padding-right: 20px}
+#content2 .area #slider{position: relative;width: 600px;height: 600px;margin: 100px 600px;overflow: hidden}
+#content2 .area #slider ul{height: 600px;width: 2400px}
+#content2 .area #slider ul li{float: left;height: 600px;width: 600px;}
+#content2 .area .btn{position: relative;width: 93px;height: 43px;margin-top: -240px}
+#content2 .area  button{position: absolute;width: 43px;height: 43px}
+#content2 .area #prev{right: 0}
+#content2 .area #next{left: 0}
+
+
+#content3 .area{margin-bottom: 250px}
+#content3 .area h2{margin-bottom: 40px}
+#content3 .area h2:before{display: none}
+#content3 .area ul{height: 290px;width: 1200px}
+#content3 .area ul li{float: left;margin-left: 72px;position: relative;overflow: hidden;}
+#content3 .area #store li.on img{transform: scale(1.1)}
+#content3 .area ul li a{height: 290px;width: 350px;overflow: hidden;}
+#content3 .area ul li a div{height: 102px;line-height: 102px;width: 350px;background-color: rgba(27, 27, 27, 75%);position: absolute;bottom: 0}
+
+#content3 .area ul li a div .store{font-size: 20px;color: #fff;margin-left: 18px}
+#content3 .area ul li a div img{float: right;margin-top: 11%;margin-right:12px}
+#content3 .area ul li:first-child{margin-left: 0}
+
+
+.sub1 #content .area h2{text-align: center;font-size: 40px; font-family: notoSerR}
+.sub1 #content .area h2:before{display: none}
+.sub1 #content .area span{display: block;margin-left: 573px}
+
+
+.sub1 #content .area .cnt1 ul li img, .sub1 #content .area ul li p{transition:  all 0.3s}
+.sub1 #content .area .cnt1 ul li{float: left;background-color: #6a6a6a;color: #fff}
+.sub1 #content .area .cnt1 ul li:hover img{opacity: 0.5;}
+.sub1 #content .area .cnt1 h2{margin-left: 487px}
+.sub1 #content .area .cnt1 ul{height: 500px;margin-top: 105px}
+.sub1 #content .area .cnt1 ul li{position: relative;margin-left: 13px}
+.sub1 #content .area .cnt1 ul li:first-child{margin-left: 0}
+.sub1 #content .area .cnt1 ul li p{position: absolute;top: 50%;left: 17%;opacity: 0;filter: Alpha(0)}
+.sub1 #content .area ul li:hover p{opacity: 1;filter: Alpha(100)}
+
+.sub1 #content .area .cnt2{width: 1200px;height: 500px;background: url("../images/sub1/junoBg.jpg")no-repeat fixed top center;margin-top: 80px;}
+.sub1 #content .area .cnt2 h2{background: none;margin-left: 460px;margin-top: 195px}
+.sub1 #content .area .cnt2 p{margin-left: 470px;font-size: 15px}
+
+.sub1 #content .area .cnt3{margin-bottom: 73px}
+.sub1 #content .area .cnt3 h2{margin: 74px 0;font-weight: normal}
+.sub1 #content .area .cnt3 ul{height: 470px;}
+.sub1 #content .area .cnt3 ul li{float: left}
+.sub1 #content .area .cnt3 p{display: inline-block;width: 540px;line-height: 24px;margin-left:30px}
+
+
+.sub1 #content .area .cnt4 #slider2{position: relative;width: 1200px;height: 600px;overflow: hidden;}
+.sub1 #content .area .cnt4 #slider2 ul{height: 600px;width: 6000px;}
+.sub1 #content .area .cnt4 #slider2 ul li{float: left;height: 600px;width: 1200px}
+.sub1 #content .area .cnt4 .btn{position: relative}
+.sub1 #content .area .cnt4 button{position: absolute;width: 26px;height: 36px;bottom: 282px}
+.sub1 #content .area .cnt4 .btn #prev1{left: 180px;}
+.sub1 #content .area .cnt4 .btn #next1{right: -994px}
+
+.sub2 #visual{width: 100%;height: 650px;background: url("../images/sub2/sub2Bg.jpg")no-repeat center top;margin-top: 101px}
+.sub2 #visual h2{background: none;float: right;margin-top: 252px;font-size: 60px;border-bottom: 1px solid #fff;position: relative;}
+.sub2 #visual p{font-size: 25px;position: absolute;right: 22%;bottom: 50%}
+
+.sub2 #content1 .area h3{margin-left: 462px;font-size: 40px;margin-top: 80px;margin-bottom: 42px}
+.sub2 #content1 .area span{display: block;width: 195px;height: 43px;line-height: 43px;background: #786f87;color: #fff;margin-left: 550px;padding-left:12.5px;box-sizing: border-box;margin-bottom: 53px}
+.sub2 #content1 .area ul{height: 330px;margin-bottom: 220px}
+.sub2 #content1 .area ul li{float: left;margin-left: 157px}
+.sub2 #content1 .area ul li:first-child{margin-left: 0}
+
+
+
+/* footer */
+#footer{background: #ccc;height: 253px;box-sizing: border-box}
+#footer .sns{height: 143px;padding-top: 57px;text-align: center;margin-left: 47%;}
+
+#footer  .sns li{float: left;margin-left: 13px}
+
+#footer .sns li:first-child{margin-left: 0}
+#footer  p{color: #fff;text-align: center;font-size: 15px;border-top: 1px solid #fff;padding-top: 30px}
